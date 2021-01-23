@@ -1,0 +1,151 @@
+html {
+  padding-bottom: 0px;
+  margin: 0;
+  background: #f6f6f6;
+  height: 100%;
+  position: relative;
+}
+
+main {
+    height: 100%;
+}
+/* Navigation bar */
+.navbar {
+  background:#3690f6;
+}
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+}
+.nav-link {
+  margin-right: 1em;
+}
+.nav-link:hover {
+  color: #000;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.page-header {
+    margin-top:50px;
+    padding: 32px;
+    min-height: 55vh;
+}
+
+/* Description page  */
+.description {
+  left: 50%;
+  position: relative;
+  top: 45%;
+  transform: translate(-50%, -55%);
+  text-align: center;
+  margin-bottom: -30px;
+}
+.description h1 {
+  color: #3690f6;
+}
+.description p {
+  color: black;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+/* Page footer */
+.page-footer {
+  background-color: #222;
+  color: #ccc;
+  position: relative;
+  padding: 60px 0 0px;
+  margin-bottom: 0;
+}
+.footer-copyright {
+  color: #666;
+  padding: 40px 0;
+}
+
+/* News */
+.news-section {
+  padding: 20px;
+  border-radius: 25px;
+  background-color: #e6e3e3;
+}
+
+.news-image {
+  border-radius: 10px;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* About */
+#about-info {
+  background-color: #e6e3e3;
+  border-radius: 5px;
+}
+
+#profile-image {
+  padding-top: 30px;
+  text-align: center;
+}
+
+#about-external {
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+.square-section {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #e6e3e3;
+}
+
+.logos {
+  text-align: right;
+}
+
+.logo-image {
+  height: 150px;
+  width: 150px;
+}
+
+.hr_style {
+  height:1px;
+  border-width:0;
+  color:gray;
+  background-color:gray;
+}
+
+.uni-info {
+      line-height: 1.7;
+}
+
+.flag{
+  font-size: 1.5em;
+}
+
+.data-homepage{
+  font-size: 1em;
+  text-align: right;
+}
+
+/* Pubblications */
+
+/* Didactics */
+
+/* Sumbit form */
+.form-control, .required,
+.features input {
+    border-radius: 0;
+}
+.btn {
+  background-color: #407dff;
+  border: 1px solid #407dff;
+  color: #fff;
+  margin-top: 20px;
+}
+.btn:hover {
+  background-color: #333;
+  border: 1px solid #333;
+}
