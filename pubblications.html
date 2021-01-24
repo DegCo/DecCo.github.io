@@ -14,7 +14,7 @@
 <body>
 	<header>
 	<nav class="navbar navbar-expand-md">
-	  <a class="navbar-brand" href="#">Logo</a>
+	  <a class="navbar-brand" href="./homepage.html">Logo</a>
 	  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
 	  <span class="navbar-toggler-icon"></span>
 	  </button>
