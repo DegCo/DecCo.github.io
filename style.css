@@ -28,7 +28,7 @@ main {
   justify-content: flex-end;
 }
 .page-header {
-    margin-top:50px;
+    margin-top:0px;
     padding: 32px;
     min-height: 55vh;
 }
@@ -43,9 +43,10 @@ ul {
   left: 50%;
   position: relative;
   top: 45%;
+  margin-top: 1.6rem;
   transform: translate(-50%, -55%);
   text-align: center;
-  margin-bottom: -30px;
+  margin-bottom: -10px;
 }
 .description h1 {
   color: #3690f6;
