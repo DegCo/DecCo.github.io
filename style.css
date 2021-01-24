@@ -33,6 +33,11 @@ main {
     min-height: 55vh;
 }
 
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
 /* Description page  */
 .description {
   left: 50%;
