@@ -24,7 +24,7 @@
 	     		<a class="nav-link" href="./index.html">Home</a>
 	    	</li>
 	    	<li class="nav-item">
-	    		<a class="nav-link" href="./about.html">About</a>
+	    		<a class="nav-link" href="./cv.html">CV</a>
 	    	</li>
 	    	<li class="nav-item">
 	    		<a class="nav-link" href="./pubblications.html">Pubblications</a>
