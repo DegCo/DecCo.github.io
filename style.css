@@ -11,7 +11,7 @@ main {
 }
 /* Navigation bar */
 .navbar {
-  background:#3690f6;
+  background:#2f854c;
 }
 .nav-link,
 .navbar-brand {
@@ -49,7 +49,7 @@ ul {
   margin-bottom: -10px;
 }
 .description h1 {
-  color: #3690f6;
+  color: #2f854c;
 }
 .description p {
   color: black;
@@ -85,10 +85,23 @@ ul {
   margin-bottom: 15px;
 }
 
-/* About */
+/* CV */
 #about-info {
   background-color: #f0ece6;
   border-radius: 5px;
+}
+
+.info-link {
+  color: #000000;
+}
+
+.info-link:hover {
+  color: #000000;
+}
+
+#scrollable{
+  height:40em;
+  overflow-y: scroll;
 }
 
 #profile-image {
@@ -97,7 +110,7 @@ ul {
 }
 
 #about-external {
-  padding-top: 30px;
+  padding-top: 0.3em;
   padding-left: 10px;
 }
 
