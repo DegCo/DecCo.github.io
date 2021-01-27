@@ -57,6 +57,12 @@ ul {
   line-height: 1.5;
 }
 
+.text-description{
+  margin-left: 45px;
+  margin-right: 45px;
+  text-align: justify;
+}
+
 /* Page footer */
 .page-footer {
   background-color: #222;
@@ -100,7 +106,7 @@ ul {
 }
 
 #scrollable{
-  height:40em;
+  height:50em;
   overflow-y: scroll;
 }
 
@@ -118,6 +124,13 @@ ul {
   padding: 20px;
   border-radius: 20px;
   background-color: #f0ece6;
+}
+
+.square-section-text {
+  padding: 50px;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .logos {
