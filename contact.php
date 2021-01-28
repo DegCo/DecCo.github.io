@@ -27,6 +27,9 @@
 	    		<a class="nav-link" href="./cv.html">CV</a>
 	    	</li>
 	    	<li class="nav-item">
+                <a class="nav-link" href="./research_interests.html">Research Interests</a>
+            </li>
+	    	<li class="nav-item">
 	    		<a class="nav-link" href="./publications.html">Publications</a>
 	    	</li>
 	    	<li class="nav-item">

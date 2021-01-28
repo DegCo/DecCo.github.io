@@ -58,8 +58,8 @@ ul {
 }
 
 .text-description{
-  margin-left: 45px;
-  margin-right: 45px;
+  margin-left: 35px;
+  margin-right: 35px;
   text-align: justify;
 }
 
@@ -124,6 +124,8 @@ ul {
   padding: 20px;
   border-radius: 20px;
   background-color: #f0ece6;
+  height:auto;
+  overflow:auto;
 }
 
 .square-section-text {
@@ -164,6 +166,15 @@ ul {
 
 /* Pubblications */
 
+/* Research intererests*/
+
+.research-image{
+  height: 25%; 
+  width:25%; 
+  margin-bottom: 10px;
+  border-radius: 5%;
+}
+
 /* Didactics */
 
 /* Sumbit form */
@@ -172,12 +183,13 @@ ul {
     border-radius: 0;
 }
 .btn {
-  background-color: #407dff;
-  border: 1px solid #407dff;
+  background-color: #2f854c;
+  border: 1px solid #2f854c;
   color: #fff;
   margin-top: 20px;
 }
 .btn:hover {
-  background-color: #333;
-  border: 1px solid #333;
+  color: #fff;
+  background-color: #990A00;
+  border: 1px solid #990A00;
 }
