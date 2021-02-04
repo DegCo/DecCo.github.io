@@ -11,6 +11,39 @@
 	<link href="./style.css" type="text/css" rel="stylesheet">
 	<!-- Add fontawesome -->
     <script src="https://kit.fontawesome.com/568a2adcad.js" crossorigin="anonymous"></script>
+
+    <!-- Include Maps for Locations -->
+    <!--
+	<script
+      	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_K9ZPQGr-Z5nQJw5hQ8V39QrceyaOLtA&callback=initMap&libraries=&v=weekly"
+     	 defer></script>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const munich = { lat: 48.13628, lng: 11.58284};
+        const padova = { lat: 45.4081, lng: 11.8799};
+        const parma = { lat: 44.80171, lng: 10.32797};
+
+        var locations = [munich, padova, parma];
+        var colors =["blue", "green", "red"];
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: munich,
+        });
+        // The marker, positioned at Uluru
+        var marker; 
+        for(i = 0; i < locations.length; i++){
+        	marker= new google.maps.Marker({
+          	position: locations[i],
+          	icon: {url: "http://maps.google.com/mapfiles/ms/icons/"+colors[i]+"-dot.png"},
+          	map: map,
+        	});
+        }
+
+      }
+    </script> -->
 </head>
 
 <body>
@@ -46,12 +79,12 @@
 	</header>
 
 	<main class="page-header header container-fluid">
-		<div class="container-fluid">
+		<div class="container-fluid" style="margin-top: -20px;">
 			<div class="description">
 	  			<h1>Home</h1>
 			</div>
 			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-12" id="about-info">
+				<div class="col-lg-3 col-md-3 col-sm-12" id="about-info-white">
 					<figure id="profile-image">
 						<img  src="./Images/image_profile.png" style="height: 70%; width:70%;   border-radius: 50%;" alt="Arturo de Giorgi">
 					</figure>
@@ -80,13 +113,21 @@
 								I knew that my city could not offer the level of education I was looking for and I was willing to move where necessary to study Physics. The Università degli Studi di Padova seemed to be the best place where to start my career from. After high school in 2015, I moved to Padua. The environment I found there was even better than expected: full of stimulating people, fellow students, and Professors. After three intense and hard years of studies, in 2018 I got my bachelor. Although I really enjoyed the years I spent there, I knew that it was time for me to open my mind and enlarge my horizons, not only about Physics, but also about different cultures. For that I decided I would have attended a Master degree in a foreign country, to learn more in an international environment. I decided to move to Munich at Ludwig-Maximilians Universität München (LMU) for my Master. There, I had the opportunity to participate in an active and fruitful teaching environment. In this journey through knowledge, I have been particularly fascinated by theoretical Physics: particle physics, gravity, and cosmology have really rocked my world. The excellent results of my examinations allowed me to try another experience: tutoring. Through that, not only I was able to start repaying part of the costs needed for my education, but also to get new insights into the taught subjects and to improve and develop new skills, such as public speaking.
 							</p>
 							<p>
-								Finally, in 2020, I managed to obtain a Master thesis at the Max-Planck Institut for Physics, one of the most cutting-edge research centers in the world. I joined the Astrophysical group led by Dr. Habil. G. Raffelt and I worked under the close supervision of JProf. S. Vogl. There, thanks to the fruitful research activity carried out, I had the opportunity to deepen my knowledge in QFT and Cosmology.
+								Finally, in 2020, I managed to obtain a Master thesis at the Max-Planck Institut for Physics, one of the most cutting-edge research centers in the world. I joined the Astrophysical group led by Dr. Habil. G. Raffelt and I worked under the supervision of JProf. S. Vogl. There, thanks to the fruitful research activity carried out, I had the opportunity to deepen my knowledge in QFT and Cosmology.
 							</p>
 							<p>	
 								There are still so many questions I would like to have an answer to and I am willing to face all of them in my career, starting from my next adventure: the PhD.
 							</p>
 						</div>
 						</div>
+						<!-- Maps Locations -->
+						<!--
+						<br>
+						<div class="square-section">
+							<h4>My Journey</h4>
+							<p>Here the milestones of my journey across Europe.</p>
+						    <div id="map"></div>
+						</div> -->
 					</div>
 	    		</div>
 			</div>
