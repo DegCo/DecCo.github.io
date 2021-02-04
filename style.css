@@ -116,6 +116,14 @@ ul {
   color: #000000;
 }
 
+.generic-link {
+  color: #2f854c;
+}
+
+.generic-link:hover {
+  color: #2f854c;
+}
+
 #scrollable{
   height:50em;
   overflow-y: scroll;
