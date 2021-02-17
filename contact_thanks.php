@@ -36,6 +36,9 @@
 	    		<a class="nav-link" href="./didactics.html">Didactics</a>
 	    	</li>
 	    	<li class="nav-item">
+                <a class="nav-link" href="./hobbies.html">Non-Scientific Interests</a>
+            </li>
+	    	<li class="nav-item">
 	    		<a class="nav-link" href="./contact.php">Contact</a>
 	    	</li>
 	    </ul>
