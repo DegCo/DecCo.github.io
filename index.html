@@ -21,19 +21,20 @@
         <script>
       // Initialize and add the map
       function initMap() {
-        // The location of Uluru
-        const munich = { lat: 48.13628, lng: 11.58284};
-        const padova = { lat: 45.4081, lng: 11.8799};
+        // The locations
+        const zurich = {lat: 47.4102590,lng: 8.5085712}
+        const munich = { lat: 48.149507802, lng: 11.57956723};
+        const padova = { lat: 45.409, lng: 11.8858};
         const parma = { lat: 44.80171, lng: 10.32797};
 
-        var locations = [munich, padova, parma];
-        var colors =["red", "red", "red"];
-        // The map, centered at Uluru
+        var locations = [zurich, munich, padova, parma];
+        var colors =["blue", "red", "red", "green"];
+        // The map, centered in Munich
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 4,
           center: munich,
         });
-        // The marker, positioned at Uluru
+        // The markers
         var marker; 
         for(i = 0; i < locations.length; i++){
         	marker= new google.maps.Marker({
