@@ -40,7 +40,7 @@
 				content: '<div id="content">' +
 				    '<div id="siteNotice">' +
 				    "</div>" +
-				    '<h1 id="firstHeading" class="firstHeading">ETH - Research Internship</h1>' +
+				    '<h2 id="firstHeading" class="firstHeading">ETH - Research Internship</h2>' +
 				    '<div id="bodyContent">' +
 				    "<p>In 2021 I managed to pursue a research internship <b>ETH</b> on Machine Learning.</p>" +
 				    "</div>" +
@@ -50,7 +50,7 @@
 				content: '<div id="content">' +
 				    '<div id="siteNotice">' +
 				    "</div>" +
-				    '<h1 id="firstHeading" class="firstHeading">LMU - Master in Physcis</h1>' +
+				    '<h2 id="firstHeading" class="firstHeading">LMU - Master in Physcis</h2>' +
 				    '<div id="bodyContent">' +
 				    "<p>In 2020 I completed my Master in Physics at <b>LMU</b>.</p>" +
 				    "</div>" +
@@ -60,7 +60,7 @@
 				content: '<div id="content">' +
 				    '<div id="siteNotice">' +
 				    "</div>" +
-				    '<h1 id="firstHeading" class="firstHeading">Unipd - Bachelor in Physics</h1>' +
+				    '<h2 id="firstHeading" class="firstHeading">Unipd - Bachelor in Physics</h2>' +
 				    '<div id="bodyContent">' +
 				    "<p>In 2015 I completed my Bachelor in Physics at <b>Unipd</b>.</p>" +
 				    "</div>" +
@@ -70,7 +70,7 @@
 				content: '<div id="content">' +
 				    '<div id="siteNotice">' +
 				    "</div>" +
-				    '<h1 id="firstHeading" class="firstHeading">Parma</h1>' +
+				    '<h2 id="firstHeading" class="firstHeading">Parma</h2>' +
 				    '<div id="bodyContent">' +
 				    "<p><b>Parma</b>, is my hometown.</p>" +
 				    "</div>" +
@@ -80,6 +80,7 @@
 
 	        // The markers
 	        var marker; 
+	        var markerList = [];
 	        for(i = 0; i < locations.length; i++){
 	        	// Create markers
 	        	marker = new google.maps.Marker({
@@ -89,12 +90,15 @@
 	          	title: labels[i],
 	          	map: map,
 	        	});
+	        	markerList.add(marker)
 	        }
-
-        	//add descriptions
-    		marker.addListener("click", () => {
-				infowindows[3].open(map, marker);
-				});
+	        
+	        //add descriptions
+	        for(i = 0; i < markerList.length; i++){
+	    		markerList[i].addListener("click", () => {
+					infowindows[i].open(map, marker);
+					});
+	        }
 
 	    }
     </script> 
