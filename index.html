@@ -80,11 +80,11 @@
 	          	title: labels[i],
 	          	map: map,
 	        	});
-	        	//add descriptions
-	        	marker.addListener("click", () => {
-	    			infowindows[i].open(map, marker);
-	  			});
 	        }
+	        //add descriptions
+        	marker.addListener("click", () => {
+    			infowindows[i].open(map, marker);
+  			});
 
 	    }
     </script> 
