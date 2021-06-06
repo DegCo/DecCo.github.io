@@ -37,13 +37,34 @@
 
 	        const infowindows = [
 				new google.maps.InfoWindow({
-				content: "<p>Research Internship at ETH on Machine Learning.</p>",
+				content: '<div id="content">' +
+				    '<div id="siteNotice">' +
+				    "</div>" +
+				    '<h1 id="firstHeading" class="firstHeading">ETH - Research Internship</h1>' +
+				    '<div id="bodyContent">' +
+				    "<p>In 2021 I managed to pursue a research internship <b>ETH</b> on Machine Learning.</p>" +
+				    "</div>" +
+				    "</div>",
 					}),
 				new google.maps.InfoWindow({
-				content: "<p>Master in Physcis at LMU.</p>",
+				content: '<div id="content">' +
+				    '<div id="siteNotice">' +
+				    "</div>" +
+				    '<h1 id="firstHeading" class="firstHeading">LMU - Master in Physcis</h1>' +
+				    '<div id="bodyContent">' +
+				    "<p>In 2020 I completed my Master in Physics at <b>LMU</b>.</p>" +
+				    "</div>" +
+				    "</div>",
 					}),
 				new google.maps.InfoWindow({
-				content: "<p>Bachelor in Physics at Unipd.</p>",
+				content: '<div id="content">' +
+				    '<div id="siteNotice">' +
+				    "</div>" +
+				    '<h1 id="firstHeading" class="firstHeading">Unipd - Bachelor in Physics</h1>' +
+				    '<div id="bodyContent">' +
+				    "<p>In 2015 I completed my Bachelor in Physics at <b>Unipd</b>.</p>" +
+				    "</div>" +
+				    "</div>",
 					}),
 				new google.maps.InfoWindow({
 				content: '<div id="content">' +
@@ -68,11 +89,12 @@
 	          	title: labels[i],
 	          	map: map,
 	        	});
+
+	        	//add descriptions
+        		marker.addListener("click", () => {
+    				infowindows[i].open(map, marker);
+  				});
 	        }
-	        //add descriptions
-        	marker.addListener("click", () => {
-    			infowindows[3].open(map, marker);
-  			});
 
 	    }
     </script> 
