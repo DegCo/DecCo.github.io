@@ -27,21 +27,46 @@
         const padova = { lat: 45.409, lng: 11.8858};
         const parma = { lat: 44.80171, lng: 10.32797};
 
+        // Details
         var locations = [zurich, munich, padova, parma];
         var colors =["blue", "red", "red", "green"];
+        const labels = ["ETH", "MSc", "BSc", "Home"]
+
         // The map, centered in Munich
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 4,
           center: munich,
         });
+
+        const infowindows = [
+			new google.maps.InfoWindow({
+			content: "Research Internship at ETH on Machine Learning.",
+				}),
+			new google.maps.InfoWindow({
+			content: "Master in Physcis at LMU.",
+				}),
+			new google.maps.InfoWindow({
+			content: "Bachelor in Physics at Unipd.",
+				}),
+			new google.maps.InfoWindow({
+			content: "My Hometown.",
+				}),
+		];
+
         // The markers
         var marker; 
         for(i = 0; i < locations.length; i++){
+        	// Create markers
         	marker= new google.maps.Marker({
           	position: locations[i],
           	icon: {url: "http://maps.google.com/mapfiles/ms/icons/"+colors[i]+"-dot.png"},
+          	//label: labels[i],
           	map: map,
         	});
+        	//add description
+        	marker.addListener("click", () => {
+    			infowindows[i].open(map, marker);
+  			});
         }
 
       }
