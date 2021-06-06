@@ -14,13 +14,10 @@
 
     <!-- Include Maps for Locations -->
 
-<script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcr2BiFZKlhLnT5_RRbgYTfSEJrK_muPk&callback=initMap">
-</script>
 
-        <script>
-      // Initialize and add the map
-      function initMap() {
+    <script>
+    // Initialize and add the map
+    function initMap() {
         // The locations
         const zurich = {lat: 47.4102590,lng: 8.5085712};
         const munich = { lat: 48.149507802, lng: 11.57956723};
@@ -64,7 +61,7 @@
           	title: labels[i],
           	map: map,
         	});
-        	//add description
+        	//add descriptions
         	marker.addListener("click", () => {
     			infowindows[i].open(map, marker);
   			});
@@ -72,6 +69,9 @@
 
       }
     </script> 
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcr2BiFZKlhLnT5_RRbgYTfSEJrK_muPk&callback=initMap" async> </script>
+
 </head>
 
 <body>
