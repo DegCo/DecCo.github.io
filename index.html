@@ -96,7 +96,7 @@
 	        //add descriptions
 	        for(i = 0; i < markerList.length; i++){
 	    		markerList[i].addListener("click", () => {
-					infowindows[i].open(map, marker);
+					infowindows[i].open(map, markerList[i]);
 					});
 	        }
 
