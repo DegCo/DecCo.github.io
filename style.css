@@ -11,7 +11,8 @@ main {
 }
 /* Navigation bar */
 .navbar {
-  background:#2f854c;
+ /*background:#2f854c; green*/
+ background-color: #000000;
 }
 .nav-link,
 .navbar-brand {
@@ -59,7 +60,8 @@ ul {
   margin-bottom: -10px;
 }
 .description h1 {
-  color: #2f854c;
+  /*color: #2f854c; green */
+  color: #000000;
 }
 .description p {
   color: black;
@@ -121,11 +123,13 @@ ul {
 }
 
 .generic-link {
-  color: #2f854c;
+  /*color: #2f854c; green */
+  color: #1600a8;
 }
 
 .generic-link:hover {
-  color: #2f854c;
+  /*color: #2f854c; green */
+  color: #000000;
 }
 
 #scrollable{
@@ -146,7 +150,8 @@ ul {
 .square-section {
   padding: 20px;
   border-radius: 20px;
-  background-color: #f0ece6;
+  /*background-color: #f0ece6; pale */
+  background-color: #f2f2f2;
   height:auto;
   overflow:auto;
 }
