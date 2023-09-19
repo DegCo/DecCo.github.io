@@ -12,6 +12,12 @@ main {
 /* Navigation bar */
 nav{
 }
+
+a{
+  /*color: #2f854c; green */
+  color: #1600a8;
+}
+
 .navbar {
  /*background:#2f854c; green*/
  background-color: #000000;
